@@ -1,31 +1,18 @@
 if __name__ == '__main__':
-    s = str(input())
-     
-    v= False
-    for j in s:
-        if  j.isalnum():
-            v=True
-    print(v) 
-    v= False
-    for j in s:
-        if  j.isalpha():
-            v=True
-    print(v) 
-    v= False
-    for j in s:
-        if  j.isdigit():
-            v=True
-    print(v) 
-        
-    for j in s:
-        if  j.islower():
-            v=True
-    print(v) 
-        
-    for j in s:
-        if  j.isupper():
-            v=True
-    print(v) 
-        
+    str = raw_input()
+    digit=False
+    alpha=False
 
-    
+    for c in str:
+        if c.isdigit():
+            digit=True
+        if c.isalpha():
+            alpha=True
+        if alpha and digit:
+            break
+
+    print digit or alpha
+    print alpha
+    print digit
+    print alpha and ( str.islower() or not str.isupper() )
+    print alpha and ( str.isupper() or not str.islower() )
