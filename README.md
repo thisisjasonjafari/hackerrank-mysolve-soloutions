@@ -1,1 +1,1 @@
-# hackerrank-mysolve-soloutions
+# hackerrank solve PROBLEMS
