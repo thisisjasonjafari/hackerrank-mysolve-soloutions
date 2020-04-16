@@ -1,0 +1,6 @@
+SELECT  COUNTRY.Continent , FLOOR(AVG(CITY.Population)) as 'avg_population'
+FROM CITY 
+INNER JOIN COUNTRY 
+ON  CITY.COUNTRYCODE = COUNTRY.CODE  
+GROUP BY COUNTRY.continent 
+;
