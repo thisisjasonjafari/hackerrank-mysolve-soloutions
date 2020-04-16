@@ -1,0 +1,1 @@
+SELECT  (salary * months)as earnings ,count(*)  FROM Employee GROUP BY 1   order by earnings desc limit 1
