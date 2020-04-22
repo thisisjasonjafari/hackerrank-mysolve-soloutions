@@ -1,2 +1,2 @@
 st = "sssss"
-print(list(st))    
+print(list(st))     
