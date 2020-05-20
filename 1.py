@@ -1,2 +1,5 @@
-st = "sssss"
-print(list(st))     
+print ("salam")
+print ("salam")
+print ("salam")
+
+
